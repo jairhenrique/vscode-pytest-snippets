@@ -1,0 +1,117 @@
+{
+    "assert_equal": {
+        "prefix": "a==",
+        "body": [
+            "assert ${1:first} == ${2:second}"
+        ],
+        "description": "Assert equal"
+    },
+    "assert_false": {
+        "prefix": "afalse",
+        "body": [
+            "assert ${1:expression} is False"
+        ],
+        "description": "Assert false"
+    },
+    "assert_greater": {
+        "prefix": "a>",
+        "body": [
+            "assert ${1:first} > ${2:second}"
+        ],
+        "description": "Assert greater"
+    },
+    "assert_greater_equal": {
+        "prefix": "a>=",
+        "body": [
+            "assert ${1:first} >= ${2:second}"
+        ],
+        "description": "Assert greater equal"
+    },
+    "assert_in": {
+        "prefix": "ain",
+        "body": [
+            "assert ${1:first} in ${2:second}"
+        ],
+        "description": "Assert in"
+    },
+    "assert_is": {
+        "prefix": "ais",
+        "body": [
+            "assert ${1:first} is ${2:second}"
+        ],
+        "description": "Assert is"
+    },
+    "assert_is_not": {
+        "prefix": "aisnot",
+        "body": [
+            "assert ${1:first} is not ${2:second}"
+        ],
+        "description": "Assert is not"
+    },
+    "assert_less": {
+        "prefix": "a<",
+        "body": [
+            "assert ${1:first} < ${2:second}"
+        ],
+        "description": "Assert less"
+    },
+    "assert_less_equal": {
+        "prefix": "a<=",
+        "body": [
+            "assert ${1:first} <= ${2:second}"
+        ],
+        "description": "Assert less equal"
+    },
+    "assert_not_equal": {
+        "prefix": "a!=",
+        "body": [
+            "assert ${1:first} != ${2:second}"
+        ],
+        "description": "Assert not equal"
+    },
+    "assert_not_in": {
+        "prefix": "a!in",
+        "body": [
+            "assert ${1:first} not in ${2:second}"
+        ],
+        "description": "Assert not in"
+    },
+    "pytest_raises": {
+        "prefix": "araises",
+        "body": [
+            "with pytest.raises(${1:exception}):",
+            "\t${2:code}"
+        ],
+        "description": "Pytest raises"
+    },
+    "assert_true": {
+        "prefix": "atrue",
+        "body": [
+            "assert ${1:expression} is True"
+        ],
+        "description": "Assert true"
+    },
+    "pytest_fixture": {
+        "prefix": "fixture",
+        "body": [
+            "@pytest.fixture",
+            "def ${1:fixture_name}(${2:request}):",
+            "\t${3:code}"
+        ],
+        "description": "Pytest fixture"
+    },
+    "pytest_mark": {
+        "prefix": "mark",
+        "body": [
+            "@pytest.mark"
+        ],
+        "description": "Pytest mark"
+    },
+    "pytest_parametrize": {
+        "prefix": "parametrize",
+        "body": [
+            "@pytest.mark.parametrize('${1:name}', [${2:parameters}])"
+        ],
+        "description": "Pytest parametrize"
+    }
+}

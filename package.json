@@ -1,0 +1,25 @@
+{
+    "name": "pytest-snippets",
+    "displayName": "pytest-snippets",
+    "description": "Snippets for pytest",
+    "version": "0.0.1",
+    "publisher": "jairhenrique",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jairhenrique/vscode-pytest-snippets.git"
+    }
+}
