@@ -70,14 +70,14 @@
         "description": "Assert not equal"
     },
     "assert_not_in": {
-        "prefix": "a!in",
+        "prefix": "anotin",
         "body": [
             "assert ${1:first} not in ${2:second}"
         ],
         "description": "Assert not in"
     },
     "pytest_raises": {
-        "prefix": "araises",
+        "prefix": "praises",
         "body": [
             "with pytest.raises(${1:exception}):",
             "\t${2:code}"
